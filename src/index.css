@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Lato';
+  font-family: 'Frank Ruhl Libre';
+  
+}
+.FashionText {
+  position: relative;
+  display: flex;
+  left: 14%;
+  transform: translateX(-50%);
+  font-family: 'Frank Ruhl Libre', serif;
+  align-items: baseline;
+  text-align: center;
+  font-size: 220px;
+  font-weight: bolder;
+  letter-spacing: 16px;
+  background-position: top left;
+  width: 100%;
+}
+.FashionText_pink {
+  position: relative;
+  background: linear-gradient(180deg, #0071BD 0%, #003457 100%);
+  display: flex;
+  left: 15%;
+  transform: translateX(-50%);
+  font-family: 'Frank Ruhl Libre', serif;
+  align-items: baseline;
+  text-align: center;
+  font-size: 220px;
+  font-weight: bolder;
+  letter-spacing: 16px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url(/src/assets/images/fashion_pink.gif);
+  background-size: cover;
+  background-position: top left;
+  width: 100%;
+  /* z-index: 99; */
+}
+.FashionText_blue {
+  position: relative;
+  background: linear-gradient(180deg, #0071BD 0%, #003457 100%);
+  display: flex;
+  left: 15%;
+  transform: translateX(-50%);
+  font-family: 'Frank Ruhl Libre', serif;
+  align-items: baseline;
+  text-align: center;
+  font-size: 220px;
+  font-weight: bolder;
+  letter-spacing: 16px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url(/src/assets/images/fashion_blue.gif);
+  background-size: cover;
+  background-position: top left;
+  width: 100%;
+}
+
+.fashiongirlanimate {
+  animation: zoom-in-zoom-out 4s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media(max-width: 992px) {
+  .FashionText {
+    display: flex;
+    font-family: 'Frank Ruhl Libre';
+    align-items: baseline;
+    text-align: center;
+    font-size: 125px;
+    font-weight: bolder;
+    justify-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    letter-spacing: 18px;
+  }
+}
+/* home slider  */
+.swiper-pagination{
+  position:relative !important;
+  bottom: -5px !important;
+  
+}
